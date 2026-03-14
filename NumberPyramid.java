@@ -1,6 +1,10 @@
+
+import java.util.Scanner;
+
 public class NumberPyramid {
     public static void main(String[] args) {
-        int n = 5;
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
 
         for (int row = 1; row <= n; row++) {
             for (int space = 0; space < n - row; space++) {
@@ -17,5 +21,7 @@ public class NumberPyramid {
 
             System.out.println();
         }
+
+        scanner.close();
     }
 }
